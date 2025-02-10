@@ -40,7 +40,7 @@
         <!-- More From Section -->
         <div class="md:col-span-4 mx-auto md:text-left text-center md:ml-56">
           <h3 class="text-sm font-bold mb-4">MORE FROM VANITY FAIR</h3>
-          <ul class="space-y-3 text-xs">
+          <ul class="space-y-2 text-xs">
             <li><a href="#" class="hover:text-gray-300">Newsletters</a></li>
             <li><a href="#" class="hover:text-gray-300">Subscribe</a></li>
             <li><a href="#" class="hover:text-gray-300">Digital Edition</a></li>

@@ -8,6 +8,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sen:wght@400..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
   </head>
+
+  <style>
+    .tinos-regular {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tinos-semibold {
+  font-family: "Tinos", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.tinos-bold {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tinos-regular-italic {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tinos-bold-italic {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+  </style>
   <body class="">
    
 
@@ -26,7 +60,7 @@
 
                   <h2 class="font-serif text-xl leading-tight mb-2">
                     <a href="#" class="relative no-underline hover:no-underline">
-                      <span class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">
+                      <span class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">
                         Is the Heritage Foundation Using Prince Harry to Test Immigration Status Privacy?
                       </span>
                     </a>
@@ -45,7 +79,7 @@
                 </div>
                 <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
                 <h2 class="font-serif text-xl leading-tight mb-2">
-                    <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out ">Is the Heritage Foundation Using Prince Harry to Test Immigration Status Privacy?</a>
+                    <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">Is the Heritage Foundation Using Prince Harry to Test Immigration Status Privacy?</a>
                 </h2>
                 <div class="text-sm text-gray-700">
                     BY <a href="#" class="uppercase hover:text-red-600">Erin Vanderhoof</a>
@@ -60,7 +94,7 @@
               </div>
               <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
               <h2 class="font-serif text-xl leading-tight mb-2">
-                  <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Is the Heritage Foundation Using Prince Harry to Test Immigration Status Privacy?</a>
+                  <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">Is the Heritage Foundation Using Prince Harry to Test Immigration Status Privacy?</a>
               </h2>
               <div class="text-sm text-gray-700">
                   BY <a href="#" class="uppercase hover:text-red-600">Erin Vanderhoof</a>
@@ -79,10 +113,10 @@
                 </div>
                 <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Exclusive</div>
                 <h2 class="font-serif text-2xl leading-tight mb-2">
-                    <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out md:text-3xl">First Look: <em>Jurassic World Rebirth</em> Goes for the Jugular</a>
+                    <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out md:text-3xl tinos-regular">First Look: <em>Jurassic World Rebirth</em> Goes for the Jugular</a>
                 </h2>
-                <p>“She’s my absolutely favorite kind of protagonist to write because she’s so deeply flawed and problematic, but we can only speculate why,” says the creator of Apple Cider Vinegar.</p>
-                <div class="text-sm mt-2 text-gray-700 mb-4">
+                <p class="font-sans">“She’s my absolutely favorite kind of protagonist to write because she’s so deeply flawed and problematic, but we can only speculate why,” says the creator of Apple Cider Vinegar.</p>
+                <div class="text-sm mt-2 text-gray-700 mb-4 tinos-regular">
                   BY <a href="#" class="uppercase hover:text-red-600">Chris Murphy</a>
                 </div>
             </article>
@@ -96,12 +130,12 @@
                 <div class="md:col-span-8 flex-col">
                   <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Documentaries</div>
                   <a href="" class="font-serif text-xl mb-3">
-                    <span class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer">
+                    <span class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
                       How a Cancer Scammer Became "One of the Most Hated Women in Australia"
                     </span>
                   </a>
 
-                  <a href="" class="text-sm">“She’s my absolutely favorite kind of protagonist to write because she’s so deeply flawed and problematic, but we can only speculate why,” says the creator of Apple Cider Vinegar.</a>
+                  <a href="" class="text-sm font-sans">“She’s my absolutely favorite kind of protagonist to write because she’s so deeply flawed and problematic, but we can only speculate why,” says the creator of Apple Cider Vinegar.</a>
                   <div class="text-sm mt-2 text-gray-700 mb-4">
                     BY <a href="#" class="uppercase hover:text-red-600">Chris Murphy</a>
                   </div>
@@ -120,7 +154,7 @@
               <div class="md:col-span-8 flex-col">
                 <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Documentaries</div>
                 <a href="" class="font-serif text-xl mb-3">
-                  <span class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer">
+                  <span class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
                     How a Cancer Scammer Became "One of the Most Hated Women in Australia"
                   </span>
                 </a>
@@ -150,7 +184,7 @@
                       <article>
                         <div class="uppercase text-red-600 text-xs font-bold tracking-wider">Politics</div>
                           <h3 class="font-serif text-base leading-tight mb-2">
-                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">The Utter Bliss—and Impending Angst—of Donald Trump's Palm Beach</a>
+                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">The Utter Bliss—and Impending Angst—of Donald Trump's Palm Beach</a>
                           </h3>
                       </article>
 
@@ -160,7 +194,7 @@
                       <article>
                         <div class="uppercase text-red-600 text-xs font-bold tracking-wider">Movies</div>
                           <h3 class="font-serif text-base leading-tight mb-2">
-                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Is Donald Trump Afraid of Elon Musk?</a>
+                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">Is Donald Trump Afraid of Elon Musk?</a>
                           </h3>
                       </article>
 
@@ -169,7 +203,7 @@
                       <article>
                         <div class="uppercase text-red-600 text-xs font-bold tracking-wider">Royals</div>
                           <h3 class="font-serif text-base leading-tight mb-2">
-                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Prince's Estate Successfully Blocks Netflix Documentary From Oscar-Winner Ezra Edelman</a>
+                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">Prince's Estate Successfully Blocks Netflix Documentary From Oscar-Winner Ezra Edelman</a>
                           </h3>
                       </article>
 
@@ -178,7 +212,7 @@
                       <article>
                         <div class="uppercase text-red-600 text-xs font-bold tracking-wider">Celebrity</div>
                           <h3 class="font-serif text-base leading-tight mb-2">
-                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Why Kate Middleton Will No Longer Share Her Outfit Details</a>
+                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">Why Kate Middleton Will No Longer Share Her Outfit Details</a>
                           </h3>
                       </article>
                   </div>
@@ -193,8 +227,8 @@
                 
                 <a href="">
                 <article class="group cursor-pointer">
-                  <h3 class="text-xl font-serif bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out mb-2 ">Super Bad True Love Story</h3>
-                  <p class="text-sm text-gray-700">How Trump favorites Stephen Miller and Katie Waldman found love in a hateful place.</p>
+                  <h3 class="text-xl font-serif bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out mb-2 tinos-semibold">Super Bad True Love Story</h3>
+                  <p class="text-sm">How Trump favorites Stephen Miller and Katie Waldman found love in a hateful place.</p>
                   
                   <div class="mt-4">
                     <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Article thumbnail" class="w-full object-cover" />
@@ -230,13 +264,13 @@
       <div class="mb-4">
           <span class="uppercase text-xs font-bold tracking-wider">Cover Story</span>
       </div>
-      <h1 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer font-serif text-5xl md:text-3xl leading-tight mb-1">
+      <h1 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer font-serif text-5xl md:text-4xl leading-tight mb-1 tinos-semibold">
         Prince Harry and Meghan Markle's American <span class="block">Hustle</span>
       </h1>
    <p class="text-lg mt-1 md:text-xl mb-6 max-w-3xl">
           Five years after leaving the monarchy, the Sussexes are trying <span class="block"> their damnedest to just be normal moguls.
       </p>
-      <div class="text-sm mb-8">
+      <div class="text-xs mb-8">
           BY <a href="#" class="uppercase hover:text-red-600">Anna Peele</a>
       </div>
     </div>
@@ -254,7 +288,7 @@
       <article class="group cursor-pointer flex ">
         <div>
           <div class="uppercase text-white text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="font-serif text-xl leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer">
+          <h2 class="font-serif text-xl leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer ">
               The Sex Abuse Scandal That's Rocking Miss Hall's
           </h2>
         </div>
@@ -305,7 +339,7 @@
 </section>
 
 <section class="max-w-7xl 2xl:max-w-screen xl:ml-20 xl:mr-20 2xl:ml-20 2xl:mr-20 mx-auto px-4 py-8">
-  <h2 class="text-2xl font-bold uppercase mb-6">Featured Video</h2>
+  <h2 class="text-3xl font-bold uppercase mb-6 tinos-semibold">Featured Video</h2>
   
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
     <!-- Main Featured Video -->
@@ -331,14 +365,14 @@
         <div class="aspect-video bg-gray-100 w-full mb-3">
           <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Video thumbnail 1" class="w-full h-full object-cover" />
         </div>
-        <h3 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer text-lg font-semibold mt-2 ">Director's Commentary: The Creative Process</h3>
+        <h3 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer text-lg font-semibold mt-2 tinos-semibold">Director's Commentary: The Creative Process</h3>
       </div>
 
       <div class="group cursor-pointer">
         <div class="aspect-video bg-gray-100 w-full mb-3">
           <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Video thumbnail 2" class="w-full h-full object-cover" />
         </div>
-        <h3 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer text-lg font-semibold mt-2 ">Cast Interview: On Set Stories</h3>
+        <h3 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer text-lg font-semibold mt-2 tinos-semibold">Cast Interview: On Set Stories</h3>
       </div>
     </div>
   </div>
@@ -346,13 +380,13 @@
 
 
 <section class="max-w-7xl 2xl:max-w-screen xl:ml-20 xl:mr-20 2xl:ml-20 2xl:mr-20 mx-auto px-4 py-8">
-  <h2 class="text-xl font-semibold text-uppercase">Highlights from the Grammy's</h2>
+  <h2 class="text-xl font-semibold uppercase tinos-semibold">Highlights from the Grammy's</h2>
   <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10">
       <!-- Article 1 -->
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="font-serif text-xl leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer ">
+          <h2 class="font-serif text-md leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
               The Sex Abuse Scandal That's Rocking Miss Hall's
           </h2>
         </div>
@@ -365,7 +399,7 @@
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="font-serif text-xl leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer ">
+          <h2 class="font-serif text-md leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
               The Sex Abuse Scandal That's Rocking Miss Hall's
           </h2>
         </div>
@@ -378,7 +412,7 @@
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="font-serif text-xl leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer">
+          <h2 class="font-serif text-md leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
               The Sex Abuse Scandal That's Rocking Miss Hall's
           </h2>
         </div>
@@ -391,7 +425,7 @@
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="font-serif text-xl leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer">
+          <h2 class="font-serif text-md leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
               The Sex Abuse Scandal That's Rocking Miss Hall's
           </h2>
         </div>
@@ -409,7 +443,7 @@
 <section class="bg-gray-100">
   <div class="flex justify-center items-center min-h-screen">
       <div class="w-full max-w-3xl text-center p-6">
-          <h1 class="text-3xl md:text-4xl font-serif font-bold text-gray-900">
+          <h1 class="text-3xl md:text-4xl font-serif font-bold">
               Our biggest stories, straight to your inbox.
           </h1>
           <p class="text-gray-700 mt-4 text-lg">
@@ -423,9 +457,9 @@
                   SIGN UP
               </button>
           </div>
-          <p class="text-gray-500 text-xs mt-4">
-              By signing up you agree to our <a href="#" class="underline">User Agreement</a> and 
-              <a href="#" class="underline">Privacy Policy & Cookie Statement</a>.
+          <p class="text-xs mt-4">
+              By signing up you agree to our <a href="#" >User Agreement</a> and 
+              <a href="#" >Privacy Policy & Cookie Statement</a>.
           </p>
       </div>
   </div>
@@ -433,7 +467,7 @@
 
 <hr class="border-black border-2 w-3/4 xl:ml-10 2xl:ml-44 mt-10" />
 <section class="max-w-7xl 2xl:max-w-screen xl:ml-20 xl:mr-20 2xl:ml-20 2xl:mr-20 mx-auto px-4 py-8">
-  <h2 class="text-2xl font-bold uppercase mb-8 tracking-wider">In Photographs</h2>
+  <h2 class="text-2xl font-bold uppercase mb-8 tracking-wider tinos-semibold">In Photographs</h2>
   
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
     <!-- Image Column -->
@@ -448,11 +482,12 @@
       <div class="space-y-4">
         <div class="uppercase text-red-600 font-semibold text-sm tracking-wider">Red Hot</div>
         
-        <h3 class="text-xl font-serif leading-tight hover:text-gray-700">
-          <a href="#">The Art of Creative Expression: A Conversation About Performance and Identity</a>
+
+        <h3 class="text-xl  font-serif leading-tight ">
+          <a href="/" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">The Art of Creative Expression: A Conversation About Performance and Identity</a>
         </h3>
         
-        <p class="text-gray-700 text-sm leading-relaxed mt-4">
+        <p class="tinos-regular text-sm leading-relaxed mt-4">
           The accomplished performer discusses artistic freedom, creative inspiration, and finding authentic voice in contemporary entertainment.
         </p>
         

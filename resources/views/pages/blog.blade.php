@@ -8,6 +8,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sen:wght@400..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
   </head>
+  <style>
+    .tinos-regular {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tinos-semibold {
+  font-family: "Tinos", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.tinos-bold {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tinos-regular-italic {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tinos-bold-italic {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+  </style>
   <body>
 
     <x-header />
@@ -20,12 +53,12 @@
           </div>
       
           <!-- Article Title -->
-          <h1 class="text-center  font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 max-w-3xl mx-auto">
+          <h1 class="text-center tinos-regular font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 max-w-3xl mx-auto">
             Natasha Lyonne on the Surreal Freedom of Make-Believe: "I'm Pretty Honest About That Being My Kink"
           </h1>
       
           <!-- Article Subtitle -->
-          <div class="text-center text-gray-700 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+          <div class="text-center tinos-regular text-lg md:text-xl mb-8 max-w-2xl mx-auto">
             The singular star of <em>Poker Face</em> also talks childhood, death, and how her inner voice sounds like noir.
           </div>
       
@@ -91,7 +124,7 @@
           </div>
       
           <!-- Article Content -->
-          <div class="font-serif text-lg leading-relaxed">
+          <div class="font-serif text-lg leading-relaxed tinos-regular">
             <p class="first-letter mb-8">"What's so amazing about having a moment is they let you <em>do</em> stuff," says Natasha Lyonne, her halo of orange curls bobbing in the East Village twilight. "It means your ideas are worthy of bankrolling and worthy of actually getting made. And it means the freedom to not have to hustle quite so hard. You don't have to go in and open your briefcase, show your wares, and have people say, 'No, thank you, we're not looking for any stopwatches today.' I've had decades of that."</p>
       
             <p class="mb-8">Lyonne lurked at the margins of Hollywood a long time, an eccentric with self-confessed niche appeal. But in recent years, she's moved closer to the center—or maybe the center has finally come to her. After co-creating the mind-bending Emmy-winning series <em>Russian Doll</em> with Leslye Headland and Amy Poehler, Lyonne scored a hit with the charming retro murder mystery series</p>
@@ -105,7 +138,7 @@
               <h1 class="text-3xl text-center md:text-4xl font-serif font-bold">
                   Hollywood Daily
               </h1>
-              <p class="text-gray-700 mt-4 text-lg text-center">
+              <p class="mt-4 text-lg text-center">
                 Film, TV, and entertainment industry news. Plus, every Friday, a special Awards Insider edition.
               </p>
               <div class="mt-6 flex flex-col sm:flex-row items-center justify-center">
