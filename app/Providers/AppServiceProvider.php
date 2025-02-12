@@ -24,9 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // view()->share('allCategory', Category::with(['posts'])->get());
+        view()->share('allCategory', Category::with(['posts'])->get());
 
-        // view()->share('allAuthor', Author::all());
+        view()->share('allAuthor', Author::all());
 
         // view()->share('trendingPost', Posts::where('trending',1)->limit(10)->get());
 

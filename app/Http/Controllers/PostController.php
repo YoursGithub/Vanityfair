@@ -15,10 +15,10 @@ use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
-    public function sitemap($slug)
+    public function sitemap($slug , $customUrl = null)
     {
 
-        $url = route('blog' , ['slug'=>$slug])  ;
+        $url = $customUrl ?? route('blog' , ['slug'=>$slug])  ;
         
             $xmlFile = public_path('sitemap.xml');
 
@@ -34,7 +34,7 @@ class PostController extends Controller
 
                 $newUrl = $dom->createElement('url');
 
-                $loc = $dom->createElement('loc', $url);
+                $loc = $dom->createElement('loc',  htmlspecialchars($url, ENT_XML1, 'UTF-8'));
                 $newUrl->appendChild($loc);
 
                 $lastmod = $dom->createElement('lastmod', Carbon::now('Asia/Kolkata')->toDateString());

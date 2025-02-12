@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 
 
-// Route::view('/','pages.index') ;
+Route::view('/','pages.index') ;
 Route::view('/blog','pages.blog') ;
 Route::view('/cat','pages.category');
 Route::view('/search','pages.search');
@@ -44,13 +44,13 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/login', [LoginController::class, 'loginForm'])->name('login');
 
 
-Route::get('/',[PageController::class, 'home'])->name('home'); 
+// Route::get('/',[PageController::class, 'home'])->name('home'); 
 
 Route::get('/category/{category}',[PageController::class, 'category'])->name('category'); 
  
 Route::get('/blog/{slug}', [PageController::class, 'blog'])->name('blog');
 
-Route::get('/search', [PageController::class, 'search'])->name('search');
+// Route::get('/search', [PageController::class, 'search'])->name('search');
 
 Route::get('/page/{slug}',[PageController::class, 'staticPage'])->name('static-page') ;
 
