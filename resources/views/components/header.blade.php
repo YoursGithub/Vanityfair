@@ -68,15 +68,18 @@
       <!-- Navigation Links -->
       <div class="hidden md:block nav-links">
           <div class="flex justify-center space-x-8 py-4 mt-[-70px]">
-              <a href="#" class="text-sm uppercase font-semibold hover:text-red-500 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Politics</a>
-              <a href="#" class="text-sm uppercase font-semibold hover:text-red-500 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Business</a>
-              <a href="#" class="text-sm uppercase font-semibold hover:text-red-500 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Hollywood</a>
-              <a href="#" class="text-sm uppercase font-semibold hover:text-red-500 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Style</a>
-              <a href="#" class="text-sm uppercase font-semibold hover:text-red-500 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Culture</a>
-              <a href="#" class="text-sm uppercase font-semibold hover:text-red-500 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Royals</a>
-              <a href="#" class="text-sm uppercase font-semibold hover:text-red-500 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Celebrity</a>
-              <a href="#" class="text-sm uppercase font-semibold hover:text-red-500 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">TV & Films</a>
-              <a href="#" class="text-sm uppercase font-semibold hover:text-red-500 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">Vanity Fair Eksklusiv</a>
+
+            @foreach ($allCategory as $cat)
+            @php
+
+                $title = Str::title($cat->category);
+                $url = route('category', ['category' => $cat->category]);
+            @endphp
+
+              <a href="{{ $url }}" class="text-sm uppercase font-semibold hover:text-red-500 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out">{{ $title }}</a>
+
+            @endforeach
+           
           </div>
       </div>
   </div>
