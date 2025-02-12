@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sen:wght@400..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sen:wght@400..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     @vite('resources/css/app.css')
   </head>
 
@@ -48,13 +49,13 @@
     <x-header />
 
 
-    <main class="pt-8">
+    <main class=" md:mt-[60px]">
       <div class="max-w-7xl 2xl:max-w-screen xl:ml-20 xl:mr-20 2xl:ml-20 2xl:mr-20 mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-8">
           <div class="md:col-span-3 mt-5">
             <a href="">
               <article class="mb-10">
                   <div class="mb-4">
-                      <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince Harry" class="w-[320px] h-[250px] object-cover">
+                      <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
                   </div>
                   <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
 
@@ -75,7 +76,7 @@
             <a href="">
               <article class="mb-10">
                 <div class="mb-4">
-                    <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince Harry" class="w-[320px] h-[250px] object-cover">
+                    <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
                 </div>
                 <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
                 <h2 class="font-serif text-xl leading-tight mb-2">
@@ -90,7 +91,7 @@
             <a href="">
             <article class="">
               <div class="mb-4">
-                  <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince Harry" class="w-[320px] h-[250px] object-cover">
+                  <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
               </div>
               <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
               <h2 class="font-serif text-xl leading-tight mb-2">
@@ -280,12 +281,9 @@
 
 <hr class="border-white w-1/4" />
 
-
-<!-- Article Grid -->
 <section class="max-w-9xl mx-auto px-6 md:px-16 py-8 bg-black">
   <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-white ">
-      <!-- Article 1 -->
-      <article class="group cursor-pointer flex ">
+      <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-white text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
           <h2 class="font-serif text-xl leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer ">
@@ -297,7 +295,6 @@
           </div>
       </article>
 
-      <!-- Article 2 -->
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-white text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
@@ -310,7 +307,6 @@
           </div>
       </article>
 
-      <!-- Article 3 -->
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-white text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
@@ -323,7 +319,6 @@
           </div>
       </article>
 
-      <!-- Article 4 -->
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-white text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
@@ -340,9 +335,7 @@
 
 <section class="max-w-7xl 2xl:max-w-screen xl:ml-20 xl:mr-20 2xl:ml-20 2xl:mr-20 mx-auto px-4 py-8">
   <h2 class="text-3xl font-bold uppercase mb-6 tinos-semibold">Featured Video</h2>
-  
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-    <!-- Main Featured Video -->
     <div class="lg:col-span-2 relative">
       <div class="relative aspect-video bg-gray-100 w-full">
         <img src="/api/placeholder/1200/675" alt="Featured video thumbnail" class="w-full h-full object-cover" />
@@ -359,7 +352,6 @@
       </div>
     </div>
 
-    <!-- Sidebar Videos -->
     <div class="space-y-6">
       <div class="group cursor-pointer">
         <div class="aspect-video bg-gray-100 w-full mb-3">

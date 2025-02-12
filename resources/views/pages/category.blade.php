@@ -11,7 +11,7 @@
   <body>
     <x-header />
 
-    <section class="bg-white">
+    <section class="bg-white md:mt-20">
       <div class="flex flex-col items-center justify-center text-center py-10">
           <hr class="w-52 border-t-2 border-gray-900 my-2">
           <h2 class="text-5xl md:text-[100px] font-serif font-bold tracking-wider">H I V E</h2>

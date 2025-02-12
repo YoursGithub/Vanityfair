@@ -48,7 +48,7 @@
       <section>
         <article class="max-w-4xl mx-auto px-4 py-12">
           <!-- Category Tag -->
-          <div class="text-center mb-8">
+          <div class="text-center mb-8 mt-10">
             <span class="text-red-600 font-semibold tracking-wider text-sm">RED HOT</span>
           </div>
       
