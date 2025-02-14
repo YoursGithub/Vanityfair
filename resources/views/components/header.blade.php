@@ -200,7 +200,7 @@
           <div class="hidden md:flex items-center news space-x-4 mt-[-75px]">
               <a href="#" class="text-sm uppercase font-bold">Newsletter</a>
               <a href="#" class="bg-red-600 text-white px-4 font-bold py-2 text-sm uppercase">Subscribe</a>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
 
         <div class="md:hidden items-center news space-x-4 mt-[-75px]">

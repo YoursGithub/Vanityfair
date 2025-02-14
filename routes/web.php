@@ -17,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::view('/','pages.index') ;
 Route::view('/blog','pages.blog') ;
 Route::view('/cat','pages.category');
-Route::view('/search','pages.search');
+// Route::view('/search','pages.search');
 Route::view('/newsletter', 'pages.newsletter');
-Route::view('/home', 'pages.index');
+// Route::view('/home', 'pages.index');
 
 
 
@@ -50,7 +50,7 @@ Route::get('/category/{category}',[PageController::class, 'category'])->name('ca
  
 Route::get('/blog/{slug}', [PageController::class, 'blog'])->name('blog');
 
-// Route::get('/search', [PageController::class, 'search'])->name('search');
+Route::get('/search', [PageController::class, 'search'])->name('search');
 
 Route::get('/page/{slug}',[PageController::class, 'staticPage'])->name('static-page') ;
 
