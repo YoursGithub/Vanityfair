@@ -1,13 +1,10 @@
 <footer class="bg-black text-white pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4">
-      <!-- Main Footer Content -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12">
-        <!-- Logo Column -->
         <div class="md:col-span-4 mx-auto">
           <a href="/" class="inline-block">
-            <img src="{{Vite::asset('resources/images/VanityFair_Denmark-removebg-preview.png') }}" alt="Magazine Logo" class="w-80 mt-[-140px] md:mt-[-70px] md:ml-[-80px]" />
+            <img src="/imagess/VanityFair_Denmark-removebg-preview.png" alt="Magazine Logo" class="w-80 mt-[-140px] md:mt-[-70px] md:ml-[-80px]" />
           </a>
-          <!-- Social Icons -->
           <div class="flex space-x-6 mt-8 justify-center sm:justify-start mt-[-70px] md:ml-[-40px]">
             <a href="#" class="hover:opacity-75">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -37,7 +34,6 @@
           </div>
         </div>          
   
-        <!-- More From Section -->
         <div class="md:col-span-4 mx-auto md:text-left text-center md:ml-56">
           <h3 class="text-sm font-bold mb-4">MORE FROM VANITY FAIR</h3>
           <ul class="space-y-2 text-xs">
@@ -50,7 +46,6 @@
           </ul>
         </div>
   
-        <!-- Contact Section -->
         <div class="md:col-span-4 mx-auto md:text-left text-center md:ml-auto md:mr-52">
           <h3 class="text-sm font-bold mb-4">CONTACT</h3>
           <ul class="space-y-3 text-xs">
@@ -61,8 +56,8 @@
           </ul>
         </div>
       </div>
-  
-      <!-- Bottom Links -->
+
+
       <div class="border-t border-gray-700 pt-8">
         <div class="flex flex-wrap justify-between items-center gap-4">
             <div class="flex flex-wrap gap-4 text-center text-sm flex-col md:flex-row justify-center md:justify-start w-full md:w-auto">
@@ -86,7 +81,6 @@
           </div>
           
   
-        <!-- Copyright -->
         <div class="mt-8 text-xs text-gray-400 text-center md:text-left">
           <p>© 2025 Condé Nast. All rights reserved. Use of this site constitutes acceptance of our User Agreement and Privacy Policy and Cookie Statement and Your California Privacy Rights.</p>
           <p class="mt-2">This site may earn a portion of sales from products that are purchased through our site as part of our Affiliate Partnerships with retailers.</p>
@@ -94,3 +88,5 @@
       </div>
     </div>
   </footer>
+
+  

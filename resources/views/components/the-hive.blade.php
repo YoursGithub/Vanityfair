@@ -7,13 +7,11 @@
   <span class="">Politics, Power and Personality. <a href="">Read More</a></span>
 
   <div class="flex flex-col lg:flex-row gap-8 mt-10">
-      <!-- Main Articles Column -->
       <div class="flex-1">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <!-- Article 1 -->
               <article>
                   <div class="space-y-4">
-                      <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Article image" class="w-full h-64 object-cover">
+                      <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Article image" class="w-full h-64 object-cover">
                       <div class="space-y-2">
                           <span class="text-red-600 text-sm font-bold tracking-wider">POLITICS</span>
                           <h2 class="text-xl font-bold leading-tight ">Is Donald Trump Afraid of Elon Musk?</h2>
@@ -22,10 +20,9 @@
                   </div>
               </article>
 
-              <!-- Article 2 -->
               <article>
                   <div class="space-y-4">
-                      <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Article image" class="w-full h-64 object-cover">
+                      <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Article image" class="w-full h-64 object-cover">
                       <div class="space-y-2">
                           <span class="text-red-600 text-sm font-bold tracking-wider">RULE BY THE FEW</span>
                           <h2 class="text-xl font-bold leading-tight">Elon Musk and JD Vance Agree On Re-Hiring DOGE Employee</h2>
@@ -34,10 +31,9 @@
                   </div>
               </article>
 
-              <!-- Article 3 -->
               <article>
                   <div class="space-y-4">
-                      <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Article image" class="w-full h-64 object-cover">
+                      <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Article image" class="w-full h-64 object-cover">
                       <div class="space-y-2">
                           <span class="text-red-600 text-sm font-bold tracking-wider">POLITICS</span>
                           <h2 class="text-xl font-bold leading-tight">Another Featured Article Title Here</h2>
@@ -48,7 +44,6 @@
           </div>
       </div>
 
-      <!-- Sidebar Articles - Fixed on right -->
       <div class="lg:w-1/3 space-y-8 lg:border-l border-gray-100 lg:pl-8">
           <article class="space-y-2">
               <span class="text-red-600 text-sm font-bold tracking-wider">POLITICS</span>

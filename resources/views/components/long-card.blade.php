@@ -27,18 +27,18 @@
                 <picture>
                 <img decoding="async" width="373" height="466" src="{{ $image }}" class="attachment-thumbnail_long size-thumbnail_long wp-post-image" alt="" tpd-template="12" tpd-post-index="0" loading="lazy">
                 </picture>
-            </a><!-- img-container -->
+            </a>
             <div class="tpd-card-title">
                 <p class="categories">
                     <a href="{{ $catUrl }}" rel="tag">{{ $cat }}</a></p>
                 <h2 class="tpd-card-headline-title " style="">
                     <a style="" href="{{ $url }}">{{ $title }}</a></h2>
                 <div class="tpd-byline">
-                </div><!-- tpd-byline -->
+                </div>
 
-            </div><!-- tpd-card-title -->
+            </div>
 
-        </div><!-- tpd-card -->
+        </div>
 
 
         @endforeach

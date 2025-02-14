@@ -65,7 +65,6 @@
 
     <section>
         <article class="max-w-4xl mx-auto px-4 py-12">
-            <!-- Category Tag -->
             <div class="text-center mb-8 mt-10">
                 <span class="text-red-600 font-semibold tracking-wider text-sm">
                   <a href="{{ $catUrl }}">
@@ -75,18 +74,15 @@
                 </span>
             </div>
 
-            <!-- Article Title -->
             <h1
                 class="text-center tinos-regular font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 max-w-3xl mx-auto">
                 {{ $title }}
             </h1>
 
-            <!-- Article Subtitle -->
             <div class="text-center tinos-regular text-lg md:text-xl mb-8 max-w-2xl mx-auto">
                 {{ $description }}
             </div>
 
-            <!-- Article Meta -->
             <div class="text-center space-y-2 text-sm uppercase tracking-wider">
                 <div class="space-x-1">
                     <span>BY</span>
@@ -100,7 +96,6 @@
                 </div>
             </div>
 
-            <!-- Hero Image -->
             <div class="mt-12">
                 <img src="{{ $image }}"
                     alt="Article hero image" class="w-full h-auto" />
@@ -110,7 +105,6 @@
 
 
         <article class="max-w-4xl mx-auto px-4">
-            <!-- Audio Player Section -->
             <div class="mb-12">
                 <h2 class="text-sm font-medium mb-4">{{ $post->image_caption }}</h2>
                 {{-- <div class="w-full bg-gray-100 rounded p-4">
@@ -131,7 +125,6 @@
                 </div> --}}
             </div>
 
-            <!-- Save Article Button -->
             <div class="float-left mr-4">
                 <button class="p-4 hover:bg-gray-100 rounded-sm">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -141,7 +134,6 @@
                 </button>
             </div>
 
-            <!-- Article Content -->
             <div class="font-serif text-lg leading-relaxed tinos-regular">
                 {!! $post->blog !!}
             </div>

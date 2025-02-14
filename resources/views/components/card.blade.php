@@ -5,7 +5,7 @@
     id="148ffba4-3df8-4fc1-a545-4dc7cbe58ac5" data-lazy-id="P0-10" class="css-hjk2n1 emk51de2">
     <div data-theme-key="three-columns-block-container" class="css-w9tso1 emk51de1">
         
-        @foreach ($posts->chunk(4) as $chunk) <!-- Chunking posts into groups of 4 -->
+        @foreach ($posts->chunk(4) as $chunk) 
             <div data-theme-key="block-column" class="css-jshx54 emk51de0">
 
                 @foreach ($chunk as $post)

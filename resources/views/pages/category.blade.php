@@ -92,15 +92,12 @@
                 @endphp
 
 
-                <!-- First Article -->
                 <a href="{{ $url }}">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start pb-12 border-b border-gray-200">
-                        <!-- Image -->
                         <div class="col-span-1 flex justify-center">
                             <img src="{{ $image }}" alt="Elon Musk"
                                 class="w-full max-w-sm rounded object-cover aspect-square" />
                         </div>
-                        <!-- Text -->
                         <div class="lg:col-span-2 md:mt-10">
                             <div class="text-red-500 text-sm uppercase font-semibold tracking-wide mb-2">
                                 {{ $category }}

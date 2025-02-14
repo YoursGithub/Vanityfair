@@ -55,7 +55,7 @@
             <a href="">
               <article class="mb-10">
                   <div class="mb-4">
-                      <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
+                      <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
                   </div>
                   <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
 
@@ -76,7 +76,7 @@
             <a href="">
               <article class="mb-10">
                 <div class="mb-4">
-                    <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
+                    <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
                 </div>
                 <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
                 <h2 class="font-serif text-xl leading-tight mb-2">
@@ -91,7 +91,7 @@
             <a href="">
             <article class="">
               <div class="mb-4">
-                  <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
+                  <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
               </div>
               <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
               <h2 class="font-serif text-xl leading-tight mb-2">
@@ -104,13 +104,12 @@
             </a>
           </div>
 
-          <!-- Main Article - 6 columns -->
           <div class="md:col-span-6 mt-5">
 
             <a href="">
               <article class="">
                 <div class="mb-4 ">
-                    <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Jurassic World Scene" class="w-full h-[400px] object-cover">
+                    <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Jurassic World Scene" class="w-full h-[400px] object-cover">
                 </div>
                 <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Exclusive</div>
                 <h2 class="font-serif text-2xl leading-tight mb-2">
@@ -143,7 +142,7 @@
                 </div>
                 <div class="md:col-span-4">
                   <a href="">
-                    <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince" class="w-full h-[130px] object-cover">
+                    <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince" class="w-full md:h-[130px] h-[250px] object-cover">
                   </a>
                 </div>
               </article>
@@ -167,7 +166,7 @@
               </div>
               <div class="md:col-span-4">
                 <a href="">
-                  <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince" class="w-full h-[130px] object-cover">
+                  <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince" class="w-full md:h-[130px] h-[250px] object-cover">
                 </a>
               </div>
             </article>
@@ -175,13 +174,11 @@
         </div>
           </div>
 
-          <!-- Trending Section - 2 columns -->
           <div class="md:col-span-3 mt-5">
               <div class="border-t-2 border-black pt-4">
                   <h2 class="font-bold text-lg uppercase mb-6 text-center">Trending</h2>
                   
                   <div class="space-y-6">
-                      <!-- Trending Items -->
                       <article>
                         <div class="uppercase text-red-600 text-xs font-bold tracking-wider">Politics</div>
                           <h3 class="font-serif text-base leading-tight mb-2">
@@ -219,7 +216,6 @@
                   </div>
               </div>
 
-              {{-- ------ --}}
 
               <div class="max-w-sm p-4 text-center">
                 <div class="mb-2">
@@ -232,7 +228,7 @@
                   <p class="text-sm">How Trump favorites Stephen Miller and Katie Waldman found love in a hateful place.</p>
                   
                   <div class="mt-4">
-                    <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Article thumbnail" class="w-full object-cover" />
+                    <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Article thumbnail" class="w-full object-cover" />
                   </div>
 
                   <p class="text-red-600 text-sm font-bold mt-7">EXPLORE THE ARCHIVE</p>
@@ -249,16 +245,12 @@
 
       
 
-      <!-- Hero Section -->
 <section class="relative w-full h-screen mt-20">
-  <!-- Hero Background Image -->
   <div class="absolute inset-0">
-      <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Prince Harry and Meghan Markle" class="w-full h-full object-cover ">
-      <!-- Gradient Overlay -->
+      <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince Harry and Meghan Markle" class="w-full h-full object-cover ">
       <div class="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent"></div>
   </div>
 
-  <!-- Hero Content -->
   <a href="">
   <div class="absolute bottom-0 left-0 right-0 p-8 text-white w-full mx-auto">
     <div class="md:ml-10">
@@ -291,7 +283,7 @@
           </h2>
         </div>
           <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Miss Hall's" class="w-20 h-14 object-cover">
+              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
           </div>
       </article>
 
@@ -303,7 +295,7 @@
           </h2>
         </div>
           <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Miss Hall's" class="w-20 h-14 object-cover">
+              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
           </div>
       </article>
 
@@ -315,7 +307,7 @@
           </h2>
         </div>
           <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Miss Hall's" class="w-20 h-14 object-cover">
+              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
           </div>
       </article>
 
@@ -327,7 +319,7 @@
           </h2>
         </div>
           <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Miss Hall's" class="w-20 h-14 object-cover">
+              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
           </div>
       </article>
   </div>
@@ -337,9 +329,9 @@
   <h2 class="text-3xl font-bold uppercase mb-6 tinos-semibold">Featured Video</h2>
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
     <div class="lg:col-span-2 relative">
-      <div class="relative aspect-video bg-gray-100 w-full">
-        <img src="/api/placeholder/1200/675" alt="Featured video thumbnail" class="w-full h-full object-cover" />
-        <button class="absolute left-4 bottom-4 mb-16 bg-black bg-opacity-75 text-white px-4 py-2 rounded-sm flex items-center gap-2">
+      <div class="relative aspect-video md:bg-gray-100 w-full">
+        <video src="" autoplay loop muted playsinline class="w-full h-full object-cover"></video>
+        <button class="absolute left-4 bottom-4 md:mb-16 mb-28 bg-black bg-opacity-75 text-white px-4 py-2 rounded-sm flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
           </svg>
@@ -355,14 +347,14 @@
     <div class="space-y-6">
       <div class="group cursor-pointer">
         <div class="aspect-video bg-gray-100 w-full mb-3">
-          <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Video thumbnail 1" class="w-full h-full object-cover" />
+          <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Video thumbnail 1" class="w-full h-full object-cover" />
         </div>
         <h3 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer text-lg font-semibold mt-2 tinos-semibold">Director's Commentary: The Creative Process</h3>
       </div>
 
       <div class="group cursor-pointer">
         <div class="aspect-video bg-gray-100 w-full mb-3">
-          <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Video thumbnail 2" class="w-full h-full object-cover" />
+          <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Video thumbnail 2" class="w-full h-full object-cover" />
         </div>
         <h3 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer text-lg font-semibold mt-2 tinos-semibold">Cast Interview: On Set Stories</h3>
       </div>
@@ -374,7 +366,6 @@
 <section class="max-w-7xl 2xl:max-w-screen xl:ml-20 xl:mr-20 2xl:ml-20 2xl:mr-20 mx-auto px-4 py-8">
   <h2 class="text-xl font-semibold uppercase tinos-semibold">Highlights from the Grammy's</h2>
   <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10">
-      <!-- Article 1 -->
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
@@ -383,11 +374,10 @@
           </h2>
         </div>
           <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Miss Hall's" class="w-20 h-14 object-cover">
+              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
           </div>
       </article>
 
-      <!-- Article 2 -->
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
@@ -396,11 +386,10 @@
           </h2>
         </div>
           <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Miss Hall's" class="w-20 h-14 object-cover">
+              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
           </div>
       </article>
 
-      <!-- Article 3 -->
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
@@ -409,11 +398,10 @@
           </h2>
         </div>
           <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Miss Hall's" class="w-20 h-14 object-cover">
+              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
           </div>
       </article>
 
-      <!-- Article 4 -->
       <article class="group cursor-pointer flex">
         <div>
           <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
@@ -422,7 +410,7 @@
           </h2>
         </div>
           <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Miss Hall's" class="w-20 h-14 object-cover">
+              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
           </div>
       </article>
   </div>
@@ -462,14 +450,12 @@
   <h2 class="text-2xl font-bold uppercase mb-8 tracking-wider tinos-semibold">In Photographs</h2>
   
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-    <!-- Image Column -->
     <div class="relative">
       <a href="#" class="block">
-        <img src="{{Vite::asset('resources/images/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png') }}" alt="Featured photograph" class="w-full h-[360px] object-cover" />
+        <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Featured photograph" class="w-full h-[360px] object-cover" />
       </a>
     </div>
 
-    <!-- Text Column -->
     <div class="flex flex-col justify-center text-center">
       <div class="space-y-4">
         <div class="uppercase text-red-600 font-semibold text-sm tracking-wider">Red Hot</div>
@@ -498,9 +484,6 @@
     </div>
   </div>
 </section>
-
-
-
 
 <x-footer />
 

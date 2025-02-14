@@ -53,14 +53,12 @@ font-style: italic;
 <a href="{{ $url }}">
 
 <div class="bg-white overflow-hidden">
-    <!-- Image Section -->
     <div class="h-72">
         <img src="{{ $image }}" 
              alt="Article image" 
              class="w-full h-full object-cover">
     </div>
 
-    <!-- Content Section -->
     <div class="p-4">
       <span class="text-red-600 text-sm font-semibold uppercase tracking-wider">{{ $cat }}</span>
       <h2 class="mt-2 text-lg font-bold tinos-semibold">{{ $title }}</h2>
