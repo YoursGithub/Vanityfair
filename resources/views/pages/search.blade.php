@@ -25,6 +25,7 @@
                   placeholder="Try &quot;Racial Justice&quot;"
                   class="w-full px-4 py-[9px] border border-gray-300 focus:outline-none"
                   name="search"
+                  value="{{ $search }}"
               />
               <button class="w-full sm:w-auto bg-black text-white px-10 py-[14px] font-semibold hover:bg-gray-800 transition">
                   <p class="text-xs">SEARCH</p>

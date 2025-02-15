@@ -52,126 +52,136 @@
     <main class=" md:mt-[60px]">
       <div class="max-w-7xl 2xl:max-w-screen xl:ml-20 xl:mr-20 2xl:ml-20 2xl:mr-20 mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-8">
           <div class="md:col-span-3 mt-5">
-            <a href="">
+            @foreach ($recentPosts->slice(0,3) as $post)
+            @php
+
+                $url = route('blog', ['slug' => $post->slug]);
+                $title = Str::title($post->title);
+
+                $image = $post->thumbnail;
+                $description = $post->description;
+
+                $date = $post->created_at->format('F d, Y ');
+                $author = $post->author?->name;
+                $cat = $post->category->category;
+                $catUrl = route('category', ['category' => $cat]);
+
+            @endphp
+
+            <a href="{{ $url }}">
               <article class="mb-10">
                   <div class="mb-4">
-                      <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
+                      <img src="{{ $image }}" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
                   </div>
-                  <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
+                  <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">{{ $cat }}</div>
 
                   <h2 class="font-serif text-xl leading-tight mb-2">
                     <a href="#" class="relative no-underline hover:no-underline">
                       <span class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">
-                        Is the Heritage Foundation Using Prince Harry to Test Immigration Status Privacy?
+                    {{ $title  }}
                       </span>
                     </a>
                   </h2>
 
                   <div class="text-sm text-gray-700">
-                      BY <a href="#" class="uppercase">Erin Vanderhoof</a>
+                      BY <a href="#" class="uppercase">{{ $author }}</a>
                   </div>
               </article>
             </a>
 
-            <a href="">
-              <article class="mb-10">
-                <div class="mb-4">
-                    <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
-                </div>
-                <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
-                <h2 class="font-serif text-xl leading-tight mb-2">
-                    <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">Is the Heritage Foundation Using Prince Harry to Test Immigration Status Privacy?</a>
-                </h2>
-                <div class="text-sm text-gray-700">
-                    BY <a href="#" class="uppercase hover:text-red-600">Erin Vanderhoof</a>
-                </div>
-            </article>
-            </a>
-
-            <a href="">
-            <article class="">
-              <div class="mb-4">
-                  <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince Harry" class="w-full md:w-[320px] h-[250px] object-cover">
-              </div>
-              <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Royals</div>
-              <h2 class="font-serif text-xl leading-tight mb-2">
-                  <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">Is the Heritage Foundation Using Prince Harry to Test Immigration Status Privacy?</a>
-              </h2>
-              <div class="text-sm text-gray-700">
-                  BY <a href="#" class="uppercase hover:text-red-600">Erin Vanderhoof</a>
-              </div>
-          </article>
-            </a>
+            @endforeach
+        
           </div>
 
           <div class="md:col-span-6 mt-5">
 
-            <a href="">
-              <article class="">
-                <div class="mb-4 ">
-                    <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Jurassic World Scene" class="w-full h-[400px] object-cover">
-                </div>
-                <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Exclusive</div>
-                <h2 class="font-serif text-2xl leading-tight mb-2">
-                    <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out md:text-3xl tinos-regular">First Look: <em>Jurassic World Rebirth</em> Goes for the Jugular</a>
-                </h2>
-                <p class="font-sans">“She’s my absolutely favorite kind of protagonist to write because she’s so deeply flawed and problematic, but we can only speculate why,” says the creator of Apple Cider Vinegar.</p>
-                <div class="text-sm mt-2 text-gray-700 mb-4 tinos-regular">
-                  BY <a href="#" class="uppercase hover:text-red-600">Chris Murphy</a>
-                </div>
-            </article>
-            </a>
+            @if ($firstPost)
+              
+
+            @php
+
+                $post = $firstPost  ;
+
+                $url = route('blog', ['slug' => $post->slug]);
+                $title = Str::title($post->title);
+
+                $image = $post->thumbnail;
+                $description = $post->description;
+
+                $date = $post->created_at->format('F d, Y ');
+                $author = $post->author?->name;
+                $cat = $post->category->category;
+                $catUrl = route('category', ['category' => $cat]);
+
+            @endphp
+
+              <a href="{{ $url }}">
+                <article class="">
+                  <div class="mb-4 ">
+                      <img src="{{ $image }}" alt="Jurassic World Scene" class="w-full h-[400px] object-cover">
+                  </div>
+                  <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">{{ $cat }}</div>
+                  <h2 class="font-serif text-2xl leading-tight mb-2">
+                      <a href="{{ $url }}" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out md:text-3xl tinos-regular">{{ $title }}</a>
+                  </h2>
+                  <p class="font-sans">
+                    {{ $description }}
+                  </p>
+                  <div class="text-sm mt-2 text-gray-700 mb-4 tinos-regular">
+                    BY <a href="#" class="uppercase hover:text-red-600">{{ $author }}</a>
+                  </div>
+              </article>
+              </a>
+
+            @endif
+
 
             <hr class="border-gray-300 " />
 
 
+            @foreach ($recentPosts->slice(3,2) as $post)
+            @php
+
+                $url = route('blog', ['slug' => $post->slug]);
+                $title = Str::title($post->title);
+
+                $image = $post->thumbnail;
+                $description = $post->description;
+
+                $date = $post->created_at->format('F d, Y ');
+                $author = $post->author?->name;
+                $cat = $post->category->category;
+                $catUrl = route('category', ['category' => $cat]);
+
+            @endphp
             <div class="mt-5">
               <article class="grid grid-cols-1 md:grid-cols-12 gap-8">
                 <div class="md:col-span-8 flex-col">
-                  <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Documentaries</div>
-                  <a href="" class="font-serif text-xl mb-3">
+                  <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">{{ $cat }}</div>
+                  <a href="{{ $url }}" class="font-serif text-xl mb-3">
                     <span class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
-                      How a Cancer Scammer Became "One of the Most Hated Women in Australia"
+                      {{ $title }}
                     </span>
                   </a>
 
-                  <a href="" class="text-sm font-sans">“She’s my absolutely favorite kind of protagonist to write because she’s so deeply flawed and problematic, but we can only speculate why,” says the creator of Apple Cider Vinegar.</a>
+                  <a href="{{ $url }}" class="text-sm font-sans">
+                    {{ $description }}
+                  </a>
                   <div class="text-sm mt-2 text-gray-700 mb-4">
-                    BY <a href="#" class="uppercase hover:text-red-600">Chris Murphy</a>
+                    BY <a href="#" class="uppercase hover:text-red-600">{{ $author }}</a>
                   </div>
                 </div>
                 <div class="md:col-span-4">
-                  <a href="">
-                    <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince" class="w-full md:h-[130px] h-[250px] object-cover">
+                  <a href="{{ $url }}">
+                    <img src="{{ $image }}" alt="Prince" class="w-full md:h-[130px] h-[250px] object-cover">
                   </a>
                 </div>
               </article>
               <hr class="border-gray-300" />
-          </div>
+            </div>
 
-          <div class="mt-5">
-            <article class="grid grid-cols-1 md:grid-cols-12 gap-8">
-              <div class="md:col-span-8 flex-col">
-                <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Documentaries</div>
-                <a href="" class="font-serif text-xl mb-3">
-                  <span class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
-                    How a Cancer Scammer Became "One of the Most Hated Women in Australia"
-                  </span>
-                </a>
+            @endforeach
 
-                <a href="" class="text-sm">“She’s my absolutely favorite kind of protagonist to write because she’s so deeply flawed and problematic, but we can only speculate why,” says the creator of Apple Cider Vinegar.</a>
-                <div class="text-sm mt-2 text-gray-700 mb-4">
-                  BY <a href="#" class="uppercase hover:text-red-600">Chris Murphy</a>
-                </div>
-              </div>
-              <div class="md:col-span-4">
-                <a href="">
-                  <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince" class="w-full md:h-[130px] h-[250px] object-cover">
-                </a>
-              </div>
-            </article>
-            <hr class="border-gray-300" />
-        </div>
           </div>
 
           <div class="md:col-span-3 mt-5">
@@ -179,40 +189,36 @@
                   <h2 class="font-bold text-lg uppercase mb-6 text-center">Trending</h2>
                   
                   <div class="space-y-6">
+
+                    @foreach ($recentPosts->slice(5,4) as $post)
+                    @php
+        
+                        $url = route('blog', ['slug' => $post->slug]);
+                        $title = Str::title($post->title);
+        
+                        $image = $post->thumbnail;
+                        $description = $post->description;
+        
+                        $date = $post->created_at->format('F d, Y ');
+                        $author = $post->author?->name;
+                        $cat = $post->category->category;
+                        $catUrl = route('category', ['category' => $cat]);
+        
+                    @endphp
+
                       <article>
-                        <div class="uppercase text-red-600 text-xs font-bold tracking-wider">Politics</div>
+                        <div class="uppercase text-red-600 text-xs font-bold tracking-wider">{{ $cat }}</div>
                           <h3 class="font-serif text-base leading-tight mb-2">
-                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">The Utter Bliss—and Impending Angst—of Donald Trump's Palm Beach</a>
+                              <a href="{{ $url }}" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">
+                                {{ $title }}
+                              </a>
                           </h3>
                       </article>
 
                       <hr class="border-gray-300" />
 
-
-                      <article>
-                        <div class="uppercase text-red-600 text-xs font-bold tracking-wider">Movies</div>
-                          <h3 class="font-serif text-base leading-tight mb-2">
-                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">Is Donald Trump Afraid of Elon Musk?</a>
-                          </h3>
-                      </article>
-
-                      <hr class="border-gray-300" />
-
-                      <article>
-                        <div class="uppercase text-red-600 text-xs font-bold tracking-wider">Royals</div>
-                          <h3 class="font-serif text-base leading-tight mb-2">
-                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">Prince's Estate Successfully Blocks Netflix Documentary From Oscar-Winner Ezra Edelman</a>
-                          </h3>
-                      </article>
-
-                      <hr class="border-gray-300" />
-
-                      <article>
-                        <div class="uppercase text-red-600 text-xs font-bold tracking-wider">Celebrity</div>
-                          <h3 class="font-serif text-base leading-tight mb-2">
-                              <a href="#" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">Why Kate Middleton Will No Longer Share Her Outfit Details</a>
-                          </h3>
-                      </article>
+                    @endforeach
+                     
                   </div>
               </div>
 
@@ -222,21 +228,40 @@
                   <span class="text-red-600 text-xs font-bold tracking-wider uppercase">The Archive</span>
                 </div>
                 
-                <a href="">
-                <article class="group cursor-pointer">
-                  <h3 class="text-xl font-serif bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out mb-2 tinos-semibold">Super Bad True Love Story</h3>
-                  <p class="text-sm">How Trump favorites Stephen Miller and Katie Waldman found love in a hateful place.</p>
-                  
-                  <div class="mt-4">
-                    <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Article thumbnail" class="w-full object-cover" />
-                  </div>
+                @foreach ($recentPosts->slice(9,1) as $post)
+                    @php
+        
+                        $url = route('blog', ['slug' => $post->slug]);
+                        $title = Str::title($post->title);
+        
+                        $image = $post->thumbnail;
+                        $description = $post->description;
+        
+                        $date = $post->created_at->format('F d, Y ');
+                        $author = $post->author?->name;
+                        $cat = $post->category->category;
+                        $catUrl = route('category', ['category' => $cat]);
+        
+                    @endphp
+                <a href="{{ $url }}">
+                  <article class="group cursor-pointer">
+                    <h3 class="text-xl font-serif bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out mb-2 tinos-semibold">{{ $title }}</h3>
+                    <p class="text-sm">
+                      {{ $description }}
+                    </p>
+                    
+                    <div class="mt-4">
+                      <img src="{{ $image }}" alt="Article thumbnail" class="w-full object-cover" />
+                    </div>
 
-                  <p class="text-red-600 text-sm font-bold mt-7">EXPLORE THE ARCHIVE</p>
+                    <p class="text-red-600 text-sm font-bold mt-7">EXPLORE THE ARCHIVE</p>
 
-                  <hr class="border-gray-300 mt-10" />
+                    <hr class="border-gray-300 mt-10" />
 
-                </article>
+                  </article>
                 </a>
+
+                @endforeach
               </div>
 
 
@@ -244,84 +269,89 @@
       </div>
 
       
+      @foreach ($recentPosts->slice(10,1) as $post)
 
-<section class="relative w-full h-screen mt-20">
-  <div class="absolute inset-0">
-      <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Prince Harry and Meghan Markle" class="w-full h-full object-cover ">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent"></div>
-  </div>
+        @php
 
-  <a href="">
-  <div class="absolute bottom-0 left-0 right-0 p-8 text-white w-full mx-auto">
-    <div class="md:ml-10">
-      <div class="mb-4">
-          <span class="uppercase text-xs font-bold tracking-wider">Cover Story</span>
-      </div>
-      <h1 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer font-serif text-5xl md:text-4xl leading-tight mb-1 tinos-semibold">
-        Prince Harry and Meghan Markle's American <span class="block">Hustle</span>
-      </h1>
-   <p class="text-lg mt-1 md:text-xl mb-6 max-w-3xl">
-          Five years after leaving the monarchy, the Sussexes are trying <span class="block"> their damnedest to just be normal moguls.
-      </p>
-      <div class="text-xs mb-8">
-          BY <a href="#" class="uppercase hover:text-red-600">Anna Peele</a>
-      </div>
-    </div>
-  </div>
-  </a>
-</section>
+            $url = route('blog', ['slug' => $post->slug]);
+            $title = Str::title($post->title);
+
+            $image = $post->thumbnail;
+            $description = $post->description;
+
+            $date = $post->created_at->format('F d, Y ');
+            $author = $post->author?->name;
+            $cat = $post->category->category;
+            $catUrl = route('category', ['category' => $cat]);
+
+          @endphp
+
+          <section class="relative w-full h-screen mt-20">
+            <div class="absolute inset-0">
+                <img src="{{ $image }}" alt="Prince Harry and Meghan Markle" class="w-full h-full object-cover ">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/100 to-transparent"></div>
+            </div>
+
+            <a href="{{ $url }}">
+            <div class="absolute bottom-0 left-0 right-0 p-8 text-white w-full mx-auto">
+              <div class="md:ml-10">
+                <div class="mb-4">
+                    <span class="uppercase text-xs font-bold tracking-wider">{{ $cat }}</span>
+                </div>
+                <h1 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer font-serif text-5xl md:text-4xl leading-tight mb-1 tinos-semibold">
+                 
+                  {{ $title }}
+                </h1>
+            <p class="text-lg mt-1 md:text-xl mb-6 max-w-3xl">
+                   {{ $description }}
+                </p>
+                <div class="text-xs mb-8">
+                    BY <a href="#" class="uppercase hover:text-red-600">{{ $author }}</a>
+                </div>
+              </div>
+            </div>
+            </a>
+          </section>
+
+        @endforeach
 
 <hr class="border-white w-1/4" />
 
 <section class="max-w-9xl mx-auto px-6 md:px-16 py-8 bg-black">
   <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-white ">
+
+    @foreach ($recentPosts->slice(11,4) as $post)
+
+          @php
+
+              $url = route('blog', ['slug' => $post->slug]);
+              $title = Str::title($post->title);
+
+              $image = $post->thumbnail;
+              $description = $post->description;
+
+              $date = $post->created_at->format('F d, Y ');
+              $author = $post->author?->name;
+              $cat = $post->category->category;
+              $catUrl = route('category', ['category' => $cat]);
+
+            @endphp
+
+    <a href="{{ $url }}">
       <article class="group cursor-pointer flex">
         <div>
-          <div class="uppercase text-white text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
+          <div class="uppercase text-white text-xs font-bold tracking-wider mb-2">{{ $cat }}</div>
           <h2 class="font-serif text-xl leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer ">
-              The Sex Abuse Scandal That's Rocking Miss Hall's
+            {{ $title }}
           </h2>
         </div>
           <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
+              <img src="{{ $image }}" alt="Miss Hall's" class="w-20 h-14 object-cover">
           </div>
       </article>
+    </a>
+    @endforeach
 
-      <article class="group cursor-pointer flex">
-        <div>
-          <div class="uppercase text-white text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer font-serif text-xl leading-tight mb-2 ">
-              The Sex Abuse Scandal That's Rocking Miss Hall's
-          </h2>
-        </div>
-          <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
-          </div>
-      </article>
-
-      <article class="group cursor-pointer flex">
-        <div>
-          <div class="uppercase text-white text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer font-serif text-xl leading-tight mb-2 ">
-              The Sex Abuse Scandal That's Rocking Miss Hall's
-          </h2>
-        </div>
-          <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
-          </div>
-      </article>
-
-      <article class="group cursor-pointer flex">
-        <div>
-          <div class="uppercase text-white text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer font-serif text-xl leading-tight mb-2 ">
-              The Sex Abuse Scandal That's Rocking Miss Hall's
-          </h2>
-        </div>
-          <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
-          </div>
-      </article>
   </div>
 </section>
 
@@ -345,19 +375,37 @@
     </div>
 
     <div class="space-y-6">
-      <div class="group cursor-pointer">
-        <div class="aspect-video bg-gray-100 w-full mb-3">
-          <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Video thumbnail 1" class="w-full h-full object-cover" />
-        </div>
-        <h3 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer text-lg font-semibold mt-2 tinos-semibold">Director's Commentary: The Creative Process</h3>
-      </div>
 
-      <div class="group cursor-pointer">
-        <div class="aspect-video bg-gray-100 w-full mb-3">
-          <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Video thumbnail 2" class="w-full h-full object-cover" />
+      @foreach ($recentPosts->slice(15,2) as $post)
+
+            @php
+
+              $url = route('blog', ['slug' => $post->slug]);
+              $title = Str::title($post->title);
+
+              $image = $post->thumbnail;
+              $description = $post->description;
+
+              $date = $post->created_at->format('F d, Y ');
+              $author = $post->author?->name;
+              $cat = $post->category->category;
+              $catUrl = route('category', ['category' => $cat]);
+
+            @endphp
+      <a href="{{ $url }}">
+        <div class="group cursor-pointer">
+          <div class="aspect-video bg-gray-100 w-full mb-3">
+            <img src="{{ $image }}" alt="Video thumbnail 1" class="w-full h-full object-cover object-top" />
+          </div>
+          <h3 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer text-lg font-semibold mt-2 tinos-semibold">{{ $title }}</h3>
         </div>
-        <h3 class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer text-lg font-semibold mt-2 tinos-semibold">Cast Interview: On Set Stories</h3>
-      </div>
+      </a>
+
+      @endforeach
+
+      
+
+
     </div>
   </div>
 </section>
@@ -366,58 +414,54 @@
 <section class="max-w-7xl 2xl:max-w-screen xl:ml-20 xl:mr-20 2xl:ml-20 2xl:mr-20 mx-auto px-4 py-8">
   <h2 class="text-xl font-semibold uppercase tinos-semibold">Highlights from the Grammy's</h2>
   <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10">
-      <article class="group cursor-pointer flex">
-        <div>
-          <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="font-serif text-md leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
-              The Sex Abuse Scandal That's Rocking Miss Hall's
-          </h2>
-        </div>
-          <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
-          </div>
-      </article>
 
-      <article class="group cursor-pointer flex">
-        <div>
-          <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="font-serif text-md leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
-              The Sex Abuse Scandal That's Rocking Miss Hall's
-          </h2>
-        </div>
-          <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
-          </div>
-      </article>
+    @foreach ($stylePosts as $post)
 
-      <article class="group cursor-pointer flex">
-        <div>
-          <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="font-serif text-md leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
-              The Sex Abuse Scandal That's Rocking Miss Hall's
-          </h2>
-        </div>
-          <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
-          </div>
-      </article>
+            @php
 
-      <article class="group cursor-pointer flex">
-        <div>
-          <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">Girls, Interrupted</div>
-          <h2 class="font-serif text-md leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
-              The Sex Abuse Scandal That's Rocking Miss Hall's
-          </h2>
-        </div>
-          <div class="aspect-w-16 aspect-h-9 mt-4">
-              <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Miss Hall's" class="w-20 h-14 object-cover">
-          </div>
-      </article>
+              $url = route('blog', ['slug' => $post->slug]);
+              $title = Str::title($post->title);
+
+              $image = $post->thumbnail;
+              $description = $post->description;
+
+              $date = $post->created_at->format('F d, Y ');
+              $author = $post->author?->name;
+              $cat = $post->category->category;
+              $catUrl = route('category', ['category' => $cat]);
+
+            @endphp
+
+            <a href="{{ $url }}">
+
+                  <article class="group cursor-pointer flex">
+                    <div>
+                      <div class="uppercase text-red-600 text-xs font-bold tracking-wider mb-2">{{ $cat }}</div>
+                      <h2 class="font-serif text-md leading-tight mb-2 bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 ease-in-out inline cursor-pointer tinos-semibold">
+                      {{ $title }}                          
+                      </h2>
+                    </div>
+                      <div class="aspect-w-16 aspect-h-9 mt-4">
+                          <img src="{{ $image }}" alt="Miss Hall's" class="w-20 h-14 object-cover">
+                      </div>
+                  </article>
+            </a>
+
+    @endforeach
+
+    
   </div>
 </section>
 
 
-<x-the-hive />
+<x-the-hive :posts="$vanPosts" cat="vanity fair eksklusiv" />
+
+<x-the-hive :posts="$hollPosts" cat="hollywood" />
+
+
+<x-the-hive :posts="$politicsPosts" cat="politics" />
+
+
 
 
 <section class="bg-gray-100">
@@ -446,44 +490,72 @@
 </section>
 
 <hr class="border-black border-2 w-3/4 xl:ml-10 2xl:ml-44 mt-10" />
+
 <section class="max-w-7xl 2xl:max-w-screen xl:ml-20 xl:mr-20 2xl:ml-20 2xl:mr-20 mx-auto px-4 py-8">
-  <h2 class="text-2xl font-bold uppercase mb-8 tracking-wider tinos-semibold">In Photographs</h2>
-  
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-    <div class="relative">
-      <a href="#" class="block">
-        <img src="/imagess/VF0225_Harry-and-Meghan_Cover-Image-Social-Crop_1.png" alt="Featured photograph" class="w-full h-[360px] object-cover" />
-      </a>
-    </div>
+  <h2 class="text-2xl font-bold uppercase mb-8 tracking-wider tinos-semibold">Celebrity</h2>
 
-    <div class="flex flex-col justify-center text-center">
-      <div class="space-y-4">
-        <div class="uppercase text-red-600 font-semibold text-sm tracking-wider">Red Hot</div>
-        
 
-        <h3 class="text-xl  font-serif leading-tight ">
-          <a href="/" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">The Art of Creative Expression: A Conversation About Performance and Identity</a>
-        </h3>
-        
-        <p class="tinos-regular text-sm leading-relaxed mt-4">
-          The accomplished performer discusses artistic freedom, creative inspiration, and finding authentic voice in contemporary entertainment.
-        </p>
-        
-        <div class=" text-xs space-y-1">
-          <div class="uppercase">
-            BY <a href="#" class="hover:text-red-600">Jane Smith</a>
-          </div>
-          <div class="uppercase">
-            PHOTOGRAPHY BY <a href="#" class="hover:text-red-600">Robert Johnson</a>
-          </div>
-          <div class="text-gray-500 uppercase">
-            January 24, 2025
+  @foreach ($celPosts->slice(0,1) as $post)
+
+      @php
+
+      $url = route('blog', ['slug' => $post->slug]);
+      $title = Str::title($post->title);
+
+      $image = $post->thumbnail;
+      $description = $post->description;
+
+      $date = $post->created_at->format('F d, Y ');
+      $author = $post->author?->name;
+      $cat = $post->category->category;
+      $catUrl = route('category', ['category' => $cat]);
+
+      @endphp
+
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="relative">
+        <a href="{{ $url }}" class="block">
+          <img src="{{ $image }}" alt="Featured photograph" class="w-full h-[360px] object-cover" />
+        </a>
+      </div>
+
+      <div class="flex flex-col justify-center text-center">
+        <div class="space-y-4">
+          <div class="uppercase text-red-600 font-semibold text-sm tracking-wider">{{ $cat }}</div>
+          
+
+          <h3 class="text-xl  font-serif leading-tight ">
+            <a href="{{ $url }}" class="bg-[linear-gradient(0deg,currentColor,currentColor)] bg-[length:0%_1px] hover:bg-[length:100%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-100 ease-in-out tinos-semibold">
+              {{ $title }}
+            </h3>
+          
+          <p class="tinos-regular text-sm leading-relaxed mt-4">
+            
+            {{ $description }}
+          </p>
+          
+          <div class=" text-xs space-y-1">
+            <div class="uppercase">
+              BY <a href="#" class="hover:text-red-600">{{ $author }}</a>
+            </div>
+            
+            <div class="text-gray-500 uppercase">
+              {{ $date }}
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+  @endforeach
+  
+  
+
+
 </section>
+
+
 
 <x-footer />
 

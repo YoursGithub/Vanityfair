@@ -30,12 +30,12 @@ class AppServiceProvider extends ServiceProvider
 
         // view()->share('trendingPost', Posts::where('trending',1)->limit(10)->get());
 
-        // view()->share('recentPosts', Posts::with('category')->latest()
-        //                                                     ->limit(34)
-        //                                                     ->get());
+        view()->share('recentPosts', Posts::with('category')->latest()
+                                                            ->limit(34)
+                                                            ->get());
 
 
-        // view()->share('firstPost', FirstPost::with('post')->find(1)?->post);
+        view()->share('firstPost', FirstPost::with('post')->find(1)?->post);
 
         // view()->share('secondPost',FirstPost::with('post')->find(2)?->post ) ;
 
@@ -54,8 +54,15 @@ class AppServiceProvider extends ServiceProvider
 
         // shareCategoryPosts('luxuryPosts', 'luxury', 6);
 
+        shareCategoryPosts('stylePosts', 'style', 4);
 
+        shareCategoryPosts('politicsPosts', 'politics', 9);
 
+        shareCategoryPosts('hollPosts', 'hollywood', 9);
+
+        shareCategoryPosts('vanPosts', 'vanity fair eksklusiv', 9);
+
+        shareCategoryPosts('celPosts', 'celebrity', 1);
 
 
 

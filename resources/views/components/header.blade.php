@@ -138,22 +138,24 @@
                 </a>
             </div>
             <div class="flex flex-col items-center space-y-4 mb-8">
-                <a href="#" class="text-center uppercase text-lg tracking-wider font-bold ">Politics</a>
-                <a href="#" class="text-center uppercase text-lg tracking-wider font-bold ">Business</a>
-                <a href="#" class="text-center uppercase text-lg tracking-wider font-bold ">Hollywood</a>
-                <a href="#" class="text-center uppercase text-lg tracking-wider font-bold ">Style</a>
-                <a href="#" class="text-center uppercase text-lg tracking-wider font-bold ">Culture</a>
-                <a href="#" class="text-center uppercase text-lg tracking-wider font-bold ">Royals</a>
-                <a href="#" class="text-center uppercase text-lg tracking-wider font-bold ">Celebrity</a>
-                <a href="#" class="text-center uppercase text-lg tracking-wider font-bold ">Video</a>
-                <a href="#" class="text-center uppercase text-lg tracking-wider font-bold ">Podcasts</a>
-                <a href="#" class="text-center uppercase text-lg tracking-wider font-bold ">Archive</a>
+                @foreach ($allCategory as $cat)
+                @php
+
+                    $title = Str::title($cat->category);
+                    $url = route('category', ['category' => $cat->category]);
+                @endphp
+
+                    <a href="{{ $url }}" class="text-center uppercase text-lg tracking-wider font-bold ">{{ $title }}</a>
+
+
+                @endforeach
+ 
             </div>
     
             <div class="w-24 h-px bg-black"></div>
             
             <div class="flex flex-col items-center space-y-4">
-                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Search</a>
+                <a href="/search" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Search</a>
                 <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Sign In</a>
                 <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Newsletter</a>
                 <a href="#" class="text-center text-sm hover:text-gray-600">Subscribe</a>
