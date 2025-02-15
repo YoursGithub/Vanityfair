@@ -15,24 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::view('/','pages.index') ;
-Route::view('/blog','pages.blog') ;
-Route::view('/cat','pages.category');
-// Route::view('/search','pages.search');
+
 Route::view('/newsletter', 'pages.newsletter');
-// Route::view('/home', 'pages.index');
+
 
 
 
 // Route::get('/login', function () {
-
-
-// User::create([
-//         'name' => 'admin',
-//         'email' => 'admin@gmail.com',
-//         'password' => Hash::make('123')
-//     ]);
-
-// User::where('name', 'admin')->update(['email' => 'admin@gmail.com' ,'password' => Hash::make('123')]);
 
 // User::find(1)->update(['email' => 'harpersAdmin@gmail.com' ,'password' => Hash::make('harpersAdmin@Pass@2025')]);
 
