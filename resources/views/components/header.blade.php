@@ -159,8 +159,8 @@
                 <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Sign In</a>
                 <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Contact</a>
                 <a href="/subscribe" class="text-center text-sm hover:text-gray-600">Subscribe</a>
-                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Privacy Policy</a>
-                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Terms and Conditions</a>
+                <a href="/privacy" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Privacy Policy</a>
+                <a href="/terms" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Terms and Conditions</a>
             </div>
             
             <div class="w-24 h-px bg-black"></div>
