@@ -28,7 +28,7 @@
         <div class="md:col-span-4 mx-auto md:text-left text-center md:ml-56">
           <h3 class="text-sm font-bold mb-4">MORE FROM VANITY FAIR</h3>
           <ul class="space-y-2 text-xs">
-            <li><a href="#" class="hover:text-gray-300">Subscribe</a></li>
+            <li><a href="/subscribe" class="hover:text-gray-300">Subscribe</a></li>
             {{-- <li><a href="#" class="hover:text-gray-300">Digital Edition</a></li> --}}
             {{-- <li><a href="#" class="hover:text-gray-300">Inside the Issue</a></li> --}}
             <li><a href="/about" class="hover:tex— Donet-gray-300">About Vanity Fair</a></li>
@@ -41,10 +41,19 @@
         <div class="md:col-span-4 mx-auto md:text-left text-center md:ml-auto md:mr-52">
           <h3 class="text-sm font-bold mb-4">Sections</h3>
           <ul class="space-y-3 text-xs">
-            <li><a href="#" class="hover:text-gray-300">Contact VF</a></li>
-            <li><a href="#" class="hover:text-gray-300">Manage Account</a></li>
-            <li><a href="#" class="hover:text-gray-300">Advertising</a></li>
-            <li><a href="#" class="hover:text-gray-300">Careers</a></li>
+
+          @foreach ($allCategory->slice(0,8) as $cat)
+                @php
+
+                    $title = Str::title($cat->category);
+                    $url = route('category', ['category' => $cat->category]);
+                @endphp
+
+            <li><a href="{{ $url }}" class="hover:text-gray-300">{{ $title }}</a></li>
+
+          @endforeach
+
+           
           </ul>
         </div>
       </div>

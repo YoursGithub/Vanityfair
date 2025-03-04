@@ -21,6 +21,8 @@ Route::view('/about', 'pages.about');
 Route::view('/terms', 'pages.terms');
 Route::view('/privacy', 'pages.privacy');
 Route::view('/userag', 'pages.useragreement');
+Route::view('/subscribe', 'pages.subscribe');
+
 
 // Route::get('/login', function () {
 

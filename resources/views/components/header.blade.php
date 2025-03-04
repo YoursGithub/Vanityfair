@@ -158,7 +158,7 @@
                 <a href="/search" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Search</a>
                 <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Sign In</a>
                 <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Contact</a>
-                <a href="#" class="text-center text-sm hover:text-gray-600">Subscribe</a>
+                <a href="/subscribe" class="text-center text-sm hover:text-gray-600">Subscribe</a>
                 <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Privacy Policy</a>
                 <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Terms and Conditions</a>
             </div>
@@ -189,12 +189,12 @@
 
           <div class="hidden md:flex items-center news space-x-4 mt-[-75px]">
               <a href="#" class="text-sm uppercase font-bold">Newsletter</a>
-              <a href="#" class="bg-red-600 text-white px-4 font-bold py-2 text-sm uppercase">Subscribe</a>
+              <a href="/subscribe" class="bg-red-600 text-white px-4 font-bold py-2 text-sm uppercase">Subscribe</a>
               <a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
 
         <div class="md:hidden items-center news space-x-4 mt-[-75px]">
-            <a href="#" class="bg-red-600 text-white px-2 font-bold py-1 text-xs uppercase">Subscribe</a>
+            <a href="/subscribe" class="bg-red-600 text-white px-2 font-bold py-1 text-xs uppercase">Subscribe</a>
         </div>
           
       </div>

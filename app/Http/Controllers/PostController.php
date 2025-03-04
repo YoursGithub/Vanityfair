@@ -223,7 +223,7 @@ class PostController extends Controller
 
     public function allDeleteTrashPosts()
     {  
-        Posts::withTrashed()->forceDelete();
+         Posts::onlyTrashed()->forceDelete();
 
         return redirect()->route('posts')->with('success', 'Posts Deleted from Trash');
     }
