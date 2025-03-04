@@ -17,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::view('/','pages.index') ;
 
 Route::view('/newsletter', 'pages.newsletter');
-
-
-
+Route::view('/about', 'pages.about');
+Route::view('/terms', 'pages.terms');
+Route::view('/privacy', 'pages.privacy');
+Route::view('/userag', 'pages.useragreement');
 
 // Route::get('/login', function () {
 

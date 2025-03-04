@@ -2,11 +2,11 @@
 
     $abUrl = request()->url();
 
-    $phUrl = url('/images/logos/logo-sq.png');
+    $phUrl = url('/imagess/VanityFair_Denmark-removebg-preview.png');
 
     $desc = "Catering to the modern man with content that promises to seduce, entertain and continuously surprise readers.";
 
-    $titleImg = url('/images/logos/rel-icon.avif');
+    $titleImg = url('/imagess/favicon.ico');
 
 @endphp
 

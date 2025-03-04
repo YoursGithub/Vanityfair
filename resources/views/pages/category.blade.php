@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>{{ Str::title($category)}} Vanity Fair</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sen:wght@400..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     @vite('resources/css/app.css')
+    @include('pages.layouts.seo')
 </head>
 
 <body>
@@ -109,7 +111,7 @@
                                 {{ $description }}
 
                             </p>
-                            <p class="text-sm text-gray-500 font-medium">BY {{ $author }}/p>
+                            <p class="text-sm text-gray-500 font-medium">BY {{ $author }}</p>
                         </div>
                     </div>
                 </a>

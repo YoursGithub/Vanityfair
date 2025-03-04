@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Vanity Fair -  Entertainment, Politics, and Fashion News | Vanity Fair</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sen:wght@400..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     @vite('resources/css/app.css')
+    @include('pages.layouts.seo')
   </head>
 
   <style>
@@ -412,7 +414,7 @@
 
 
 <section class="max-w-7xl 2xl:max-w-screen xl:ml-20 xl:mr-20 2xl:ml-20 2xl:mr-20 mx-auto px-4 py-8">
-  <h2 class="text-xl font-semibold uppercase tinos-semibold">Highlights from the Grammy's</h2>
+  <h2 class="text-xl font-semibold uppercase tinos-semibold">The Curator's Choice</h2>
   <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10">
 
     @foreach ($stylePosts as $post)

@@ -134,7 +134,7 @@
         <div class="overlay-content flex flex-col items-center space-y-6 pt-20">
             <div class="flex-1 flex justify-center items-center mt-[-35px]">
                 <a href="/" class="text-xl font-serif text-red-600 uppercase tracking-wider logo-wrapper md:w-[600px] h-96">
-                    <img src="/imagess/VanityFair_Denmark-removebg-preview.png" alt="Vanity Fair" class="logo w-[600px]">
+                    <img src="/imagess/VanityFair_Denmark-removebg-preview.png" alt="Vanity Fair" class="logo w-[600px] object-cover">
                 </a>
             </div>
             <div class="flex flex-col items-center space-y-4 mb-8">
@@ -157,32 +157,20 @@
             <div class="flex flex-col items-center space-y-4">
                 <a href="/search" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Search</a>
                 <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Sign In</a>
-                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Newsletter</a>
+                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Contact</a>
                 <a href="#" class="text-center text-sm hover:text-gray-600">Subscribe</a>
-                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Give a Gift</a>
-                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Archive</a>
-                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">VF Shop</a>
-                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Magazine</a>
+                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Privacy Policy</a>
+                <a href="#" class="text-center uppercase text-sm tracking-wider hover:text-gray-600">Terms and Conditions</a>
             </div>
             
             <div class="w-24 h-px bg-black"></div>
             
             <div class="flex space-x-6 pt-4">
-                <a href="#" class="hover:text-gray-600">
-                    <i class="fab fa-facebook-f text-xl"></i>
-                </a>
-                <a href="#" class="hover:text-gray-600">
-                    <i class="fab fa-twitter text-xl"></i>
-                </a>
-                <a href="#" class="hover:text-gray-600">
+                
+                <a href="https://www.instagram.com/vanityfair.denmark" class="hover:text-gray-600">
                     <i class="fab fa-instagram text-xl"></i>
                 </a>
-                <a href="#" class="hover:text-gray-600">
-                    <i class="fab fa-pinterest-p text-xl"></i>
-                </a>
-                <a href="#" class="hover:text-gray-600">
-                    <i class="fab fa-youtube text-xl"></i>
-                </a>
+                
             </div>
         </div>
     </div>

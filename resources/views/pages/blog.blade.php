@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>{{ Str::title($post->title)}} Vanity Fair</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sen:wght@400..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     @vite('resources/css/app.css')
+    @include('pages.layouts.seo')
 </head>
 <style>
     .tinos-regular {
@@ -75,7 +77,7 @@
             </div>
 
             <h1
-                class="text-center tinos-regular font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-8 max-w-3xl mx-auto">
+                class="text-center tinos-regular font-serif text-4xl md:text-5xl lg:text-5xl leading-tight mb-8 max-w-3xl mx-auto">
                 {{ $title }}
             </h1>
 
@@ -105,7 +107,7 @@
 
 
         <article class="max-w-4xl mx-auto px-4">
-            <div class="mb-12">
+            <div class="mb-1">
                 <h2 class="text-sm font-medium mb-4">{{ $post->image_caption }}</h2>
                 {{-- <div class="w-full bg-gray-100 rounded p-4">
                     <div class="flex items-center justify-between gap-4">
@@ -126,12 +128,12 @@
             </div>
 
             <div class="float-left mr-4">
-                <button class="p-4 hover:bg-gray-100 rounded-sm">
+                {{-- <button class="p-4 hover:bg-gray-100 rounded-sm">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                             d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
                     </svg>
-                </button>
+                </button> --}}
             </div>
 
             <div class="font-serif text-lg leading-relaxed tinos-regular">
