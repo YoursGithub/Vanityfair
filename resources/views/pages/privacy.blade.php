@@ -7,7 +7,12 @@
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-100 text-gray-900 p-6">
-    <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md">
+    <div class="absolute top-1 mt-[-50px] left-1/2 transform -translate-x-1/2">
+        <a href="/">
+        <img src="/imagess/VanityFair_Denmark-removebg-preview.png" alt="Vanity Fair Denmark Logo" class="w-48 h-auto">
+        </a>
+    </div>
+    <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md mt-20">
         <h1 class="text-3xl font-bold mb-4">Privacy Rights</h1>
         <p class="text-gray-700 mb-4">Effective Date: <span class="font-semibold"></span></p>
         

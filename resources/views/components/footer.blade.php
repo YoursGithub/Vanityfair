@@ -7,10 +7,8 @@
                  alt="Magazine Logo" 
                  class="w-80 mx-auto mt-[-140px] md:mt-[-120px] md:ml-[-40px]" />
           </a>
-          
-          
-        
-          <p class="mt-3 text-center md:text-left mt-[-90px]">
+
+          <p class="mt-3 text-center md:text-left mt-[-120px] md:mt-[-90px]">
             Vanity Fair Denmark – A distinguished publication delivering insightful journalism, cultural commentary, and in-depth reporting on fashion, politics, and society with a global and Danish perspective.
           </p>
         
