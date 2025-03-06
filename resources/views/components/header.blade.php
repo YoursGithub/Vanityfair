@@ -174,11 +174,15 @@
             </div>
         </div>
     </div>
-
+<style>
+    .md\:ml-34{
+        margin-left: calc(var(--spacing)* 34);
+    }
+</style>
 
   <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center justify-between py-4">
-        <div class="flex-1 flex justify-center items-center md:ml-44">
+        <div class="flex-1 flex justify-center items-center md:ml-34">
             <a href="/" class="text-xl font-serif text-red-600 uppercase tracking-wider logo-wrapper md:w-80 h-96">
                 <img src="/imagess/VanityFair_Denmark-removebg-preview.png" 
                      alt="Vanity Fair" 
