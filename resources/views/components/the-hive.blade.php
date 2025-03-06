@@ -47,7 +47,7 @@
 
       <div class="lg:w-1/3 space-y-8 lg:border-l border-gray-100 lg:pl-8">
 
-        @foreach ($posts->slice(4,5) as $post)
+        @foreach ($posts->slice(4,9) as $post)
 
                 @php
 

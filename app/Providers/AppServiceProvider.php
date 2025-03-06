@@ -56,9 +56,9 @@ class AppServiceProvider extends ServiceProvider
 
         shareCategoryPosts('stylePosts', 'style', 4);
 
-        shareCategoryPosts('politicsPosts', 'politics', 9);
+        shareCategoryPosts('politicsPosts', 'politics', 20);
 
-        shareCategoryPosts('hollPosts', 'hollywood', 9);
+        shareCategoryPosts('hollPosts', 'hollywood', 20);
 
         shareCategoryPosts('vanPosts', 'vanity fair eksklusiv', 9);
 
