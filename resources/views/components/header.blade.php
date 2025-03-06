@@ -175,9 +175,12 @@
         </div>
     </div>
 <style>
-    .md\:ml-34{
+    @media(min-width:768px){
+        .md\:ml-34{
         margin-left: calc(var(--spacing)* 34);
     }
+    }
+   
 </style>
 
   <div class="max-w-7xl mx-auto px-4">
