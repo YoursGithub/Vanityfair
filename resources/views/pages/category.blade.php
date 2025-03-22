@@ -56,7 +56,7 @@
                         <img src="{{ $image }}" alt="Article hero image" class="w-full h-auto object-cover" />
                     </div>
 
-                    <div class="text-center mt-10 md:mt-[-60px]">
+                    <div class="text-center m-10 mt-10 md:mt-[-60px]">
                         <div class="text-red-500 uppercase text-sm font-semibold">
                             {{ $cat }}
                         </div>
